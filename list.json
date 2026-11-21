@@ -3,31 +3,179 @@
     "meals": [
         {
             "day": "M\u00e5ndag",
-            "name": "Kycklingwok med jasminris och broccoli"
+            "name": "Kycklingwok med jasminris och broccoli",
+            "recipe": {
+                "time": "30 min",
+                "servings": 2,
+                "ingredients": [
+                    "1 kg kycklingbr\u00f6stfil\u00e9, upptinad (fr\u00e5n 2 kg-f\u00f6rpackningen)",
+                    "2 dl jasminris",
+                    "1 p\u00e5se broccoli (250 g)",
+                    "2 mor\u00f6tter",
+                    "1 gul l\u00f6k",
+                    "2 klyftor vitl\u00f6k",
+                    "salladsl\u00f6k till servering",
+                    "2 dl kokosmj\u00f6lk (1 f\u00f6rpackning 250 ml)",
+                    "2\u20133 msk sojas\u00e5s",
+                    "1 msk raps- och sm\u00f6rolja",
+                    "salt och peppar"
+                ],
+                "steps": [
+                    "Koka riset enligt anvisningen p\u00e5 f\u00f6rpackningen.",
+                    "Sk\u00e4r kycklingen i strimlor och stek den i olja i en stor panna tills den \u00e4r genomstekt, ca 8\u201310 min. Krydda med salt och peppar. L\u00e4gg undan ungef\u00e4r h\u00e4lften till fredagens tacos och ev. matl\u00e5da.",
+                    "Skiva l\u00f6k, vitl\u00f6k och mor\u00f6tter. Dela broccolin i buketter. Woka gr\u00f6nsakerna i samma panna i 4\u20135 min tills de \u00e4r mjuka men fortfarande har tuggmotst\u00e5nd.",
+                    "L\u00e4gg tillbaka kycklingen till middagen. H\u00e4ll i kokosmj\u00f6lk och sojas\u00e5s och l\u00e5t sjuda 3\u20134 min.",
+                    "Servera med riset och str\u00f6 \u00f6ver hackad salladsl\u00f6k."
+                ]
+            }
         },
         {
             "day": "Tisdag",
-            "name": "Pasta med fl\u00e4skf\u00e4rss\u00e5s (g\u00f6r extra till matl\u00e5da)"
+            "name": "Pasta med fl\u00e4skf\u00e4rss\u00e5s (g\u00f6r extra till matl\u00e5da)",
+            "recipe": {
+                "time": "30 min",
+                "servings": 2,
+                "ingredients": [
+                    "500\u20131000 g fl\u00e4skf\u00e4rs (anv\u00e4nd g\u00e4rna hela kilot om du vill ha extra s\u00e5s till matl\u00e5da)",
+                    "300\u2013400 g pasta, korta former (mer om du ocks\u00e5 fryser in matl\u00e5da)",
+                    "2\u20133 f\u00f6rpackningar krossade tomater (390 g)",
+                    "1 gul l\u00f6k",
+                    "2 klyftor vitl\u00f6k",
+                    "1\u20132 mor\u00f6tter",
+                    "1 msk raps- och sm\u00f6rolja",
+                    "salt och peppar",
+                    "ev. en nypa socker"
+                ],
+                "steps": [
+                    "Hacka l\u00f6k och vitl\u00f6k fint och riv moroten. Fr\u00e4s l\u00f6ken mjuk i oljan, tills\u00e4tt f\u00e4rsen och bryn den tills den mister sin r\u00e5a f\u00e4rg.",
+                    "H\u00e4ll i krossade tomater och den rivna moroten. Krydda med salt, peppar och ev. en nypa socker. L\u00e5t s\u00e5sen sjuda under lock i ca 15 min.",
+                    "Koka pastan enligt anvisningen. Spara 1 dl pastavatten och blanda pastan med s\u00e5sen. Sp\u00e4d med pastavattnet om s\u00e5sen \u00e4r tjock.",
+                    "L\u00e4gg undan extra s\u00e5s, och ev. pasta, till matl\u00e5da. Servera resten till middag."
+                ]
+            }
         },
         {
             "day": "Onsdag",
-            "name": "Ugnsbakad fisk med potatis och broccoli"
+            "name": "Ugnsbakad fisk med potatis och broccoli",
+            "recipe": {
+                "time": "30 min",
+                "servings": 2,
+                "ingredients": [
+                    "ca 500\u2013800 g Kaptenens favoriter (resten kan ligga kvar i frysen)",
+                    "600\u2013800 g mj\u00f6lig potatis",
+                    "1 p\u00e5se broccoli (250 g)",
+                    "1 msk sm\u00f6r",
+                    "salt och peppar"
+                ],
+                "steps": [
+                    "S\u00e4tt ugnen p\u00e5 temperaturen som st\u00e5r p\u00e5 fiskf\u00f6rpackningen, oftast 225 \u00b0C. Sk\u00e4r potatisen i klyftor och koka den i saltat vatten i 15\u201320 min tills den \u00e4r mjuk.",
+                    "L\u00e4gg fisken p\u00e5 en pl\u00e5t med bakpl\u00e5tspapper och tillaga enligt f\u00f6rpackningen, ca 15\u201320 min, tills den \u00e4r gyllene.",
+                    "Dela broccolin i buketter och koka eller \u00e5nga den de sista 5\u20136 minuterna, s\u00e5 att den \u00e4r gr\u00f6n och precis mjuk.",
+                    "H\u00e4ll av potatisen och v\u00e4nd den i en klick sm\u00f6r, salt och peppar. Servera med fisken och broccolin."
+                ]
+            }
         },
         {
             "day": "Torsdag",
-            "name": "Kebab i ciabatta"
+            "name": "Kebab i ciabatta",
+            "recipe": {
+                "time": "30 min",
+                "servings": 2,
+                "ingredients": [
+                    "500 g kebab av fl\u00e4skkarr\u00e9",
+                    "2 ciabatta (300 g)",
+                    "2 msk mayo",
+                    "2 msk yoghurt (Yoggi)",
+                    "1 klyfta vitl\u00f6k",
+                    "ca \u00bc isbergssallad",
+                    "\u00bd gurka",
+                    "\u00bd gul l\u00f6k eller salladsl\u00f6k",
+                    "salt och peppar"
+                ],
+                "steps": [
+                    "Stek kebaben i en het panna enligt anvisningen, ca 8\u201310 min, tills den \u00e4r genomstekt och f\u00e5tt yta.",
+                    "V\u00e4rm ciabattan i ugnen p\u00e5 200 \u00b0C i 5\u20138 min s\u00e5 att den blir knaprig.",
+                    "Blanda mayo, yoghurt, pressad vitl\u00f6k, salt och peppar till en enkel s\u00e5s. Skiva gurkan och strimla sallad och l\u00f6k.",
+                    "Dela br\u00f6den, bred p\u00e5 s\u00e5s och fyll med kebab och gr\u00f6nsaker. Servera direkt."
+                ]
+            }
         },
         {
             "day": "Fredag",
-            "name": "Kycklingtacos med avokado"
+            "name": "Kycklingtacos med avokado",
+            "recipe": {
+                "time": "30 min",
+                "servings": 2,
+                "ingredients": [
+                    "ca 400\u2013500 g kyckling fr\u00e5n m\u00e5ndagen (eller nystekt, upptinad kycklingfil\u00e9)",
+                    "4\u20136 tortillabr\u00f6d (ur 8-packen)",
+                    "taco kryddmix, efter smak (30 g-p\u00e5sen)",
+                    "tacos\u00e5s, efter smak",
+                    "2 avokado",
+                    "ca \u00bc isbergssallad",
+                    "\u00bd gurka",
+                    "\u00bd gul l\u00f6k eller salladsl\u00f6k",
+                    "ev. en klick yoghurt",
+                    "1 tsk raps- och sm\u00f6rolja"
+                ],
+                "steps": [
+                    "Sk\u00e4r den sparade kycklingen i bitar. V\u00e4rm den i en panna med olja och taco kryddmix i 3\u20134 min. Har du ingen rest: stek ca 400 g upptinad kycklingfil\u00e9 och krydda p\u00e5 samma s\u00e4tt.",
+                    "V\u00e4rm tortillas enligt f\u00f6rpackningen.",
+                    "Skiva avokado och strimla sallad, gurka och l\u00f6k.",
+                    "Fyll tortillas med kyckling, gr\u00f6nsaker och tacos\u00e5s. Toppa med avokado och ev. en klick yoghurt."
+                ]
+            }
         },
         {
             "day": "L\u00f6rdag",
-            "name": "K\u00f6ttbullar med potatismos och r\u00f6dbetssallad"
+            "name": "K\u00f6ttbullar med potatismos och r\u00f6dbetssallad",
+            "recipe": {
+                "time": "40 min",
+                "servings": 2,
+                "ingredients": [
+                    "ca 500 g k\u00f6ttbullar (resten av kilot kan frysas in eller bli matl\u00e5da)",
+                    "1 kg mj\u00f6lig potatis",
+                    "2\u20133 dl mellanmj\u00f6lk",
+                    "50 g sm\u00f6r",
+                    "200 g r\u00f6dbetssallad",
+                    "lingon efter smak",
+                    "salt och peppar"
+                ],
+                "steps": [
+                    "Skala potatisen, sk\u00e4r den i j\u00e4mna bitar och koka den mjuk i saltat vatten, ca 20 min.",
+                    "Tillaga k\u00f6ttbullarna i ugn eller panna enligt f\u00f6rpackningen tills de \u00e4r genomstekta och har f\u00e5tt yta.",
+                    "H\u00e4ll av potatisen. Mosa den med sm\u00f6r och varm mj\u00f6lk till ett sl\u00e4tt mos. Smaka av med salt och peppar.",
+                    "Servera k\u00f6ttbullarna med potatismos, r\u00f6dbetssallad och lingon."
+                ]
+            }
         },
         {
             "day": "S\u00f6ndag",
-            "name": "Tomatsoppa med pannkakor"
+            "name": "Tomatsoppa med pannkakor",
+            "recipe": {
+                "time": "35 min",
+                "servings": 2,
+                "ingredients": [
+                    "2\u20133 f\u00f6rpackningar krossade tomater (390 g)",
+                    "1 gul l\u00f6k",
+                    "2 klyftor vitl\u00f6k",
+                    "1 morot",
+                    "2 dl vatten",
+                    "1\u20132 dl mellanmj\u00f6lk",
+                    "1 msk sm\u00f6r",
+                    "1 paket pannkakor (480 g)",
+                    "salt och peppar",
+                    "ev. en nypa socker",
+                    "ev. sm\u00f6r och lingon till pannkakorna"
+                ],
+                "steps": [
+                    "Hacka l\u00f6k, vitl\u00f6k och morot. Fr\u00e4s dem i sm\u00f6r tills de mjuknar, ca 5 min.",
+                    "H\u00e4ll i krossade tomater och 2 dl vatten. L\u00e5t sjuda i 15 min.",
+                    "Mixa soppan sl\u00e4t och sp\u00e4d med mj\u00f6lk till \u00f6nskad tjocklek. Smaka av med salt, peppar och ev. en nypa socker.",
+                    "V\u00e4rm pannkakorna i panna eller mikrov\u00e5gsugn enligt f\u00f6rpackningen.",
+                    "Servera soppan med pannkakorna. En klick sm\u00f6r och lingon passar till pannkakorna."
+                ]
+            }
         }
     ],
     "sections": [
