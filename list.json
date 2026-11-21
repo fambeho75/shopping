@@ -1,78 +1,209 @@
 {
-  "week": "2026-W47",
-  "meals": [
-    { "day": "Måndag", "name": "Pasta med köttfärssås (gör dubbel sats, så blir tisdagens lunch klar)" },
-    { "day": "Tisdag", "name": "Kycklingwok med grönsaker och ris" },
-    { "day": "Onsdag", "name": "Falukorv i ugn med potatismos" },
-    { "day": "Torsdag", "name": "Fiskgratäng med fryst sej och kokt potatis" },
-    { "day": "Fredag", "name": "Tacos med köttfärs och bönor" },
-    { "day": "Lördag", "name": "Bratwurst med surkål och stekt potatis" },
-    { "day": "Söndag", "name": "Krämig linssoppa med bröd (och resterna från veckan)" }
-  ],
-  "sections": [
-    {
-      "name": "Frukt och grönt",
-      "items": [
-        { "name": "Potatis", "qty": "2 kg" },
-        { "name": "Gul lök", "qty": "1 kg" },
-        { "name": "Vitlök", "qty": "1 st" },
-        { "name": "Morötter", "qty": "1 kg" },
-        { "name": "Paprika", "qty": "1 st" },
-        { "name": "Isbergssallad", "qty": "1 st" },
-        { "name": "Tomater", "qty": "2 st" },
-        { "name": "Gurka", "qty": "1 st" },
-        { "name": "Bananer" },
-        { "name": "Äpplen" }
-      ]
-    },
-    {
-      "name": "Bröd",
-      "items": [
-        { "name": "Limpa", "qty": "1 st" },
-        { "name": "Tortillabröd", "qty": "8 st" }
-      ]
-    },
-    {
-      "name": "Kött",
-      "items": [
-        { "name": "Blandfärs", "qty": "1 kg" },
-        { "name": "Falukorv", "qty": "800 g" },
-        { "name": "Bratwurst", "qty": "4 st" }
-      ]
-    },
-    {
-      "name": "Mejeri",
-      "items": [
-        { "name": "Mjölk", "qty": "3 l" },
-        { "name": "Smör", "qty": "1 paket" },
-        { "name": "Riven ost", "qty": "500 g" },
-        { "name": "Grädde", "qty": "1 dl" },
-        { "name": "Ägg", "qty": "12 st" },
-        { "name": "Yoghurt" }
-      ]
-    },
-    {
-      "name": "Frys",
-      "items": [
-        { "name": "Kycklingfilé", "qty": "600 g" },
-        { "name": "Sej", "qty": "400 g" },
-        { "name": "Wokgrönsaker", "qty": "1 påse" }
-      ]
-    },
-    {
-      "name": "Skafferi",
-      "items": [
-        { "name": "Pasta", "qty": "1 kg" },
-        { "name": "Ris", "qty": "1 kg" },
-        { "name": "Krossade tomater", "qty": "2 paket" },
-        { "name": "Svarta bönor", "qty": "1 burk" },
-        { "name": "Tacokrydda", "qty": "1 st" },
-        { "name": "Röda linser", "qty": "500 g" },
-        { "name": "Surkål", "qty": "1 burk" },
-        { "name": "Kokosmjölk", "qty": "1 burk" },
-        { "name": "Japansk soja" },
-        { "name": "Havregryn", "qty": "1 kg" }
-      ]
-    }
-  ]
+    "week": "2026-W48",
+    "meals": [
+        {
+            "day": "M\u00e5ndag",
+            "name": "Kycklingwok med jasminris och broccoli"
+        },
+        {
+            "day": "Tisdag",
+            "name": "Pasta med fl\u00e4skf\u00e4rss\u00e5s (g\u00f6r extra till matl\u00e5da)"
+        },
+        {
+            "day": "Onsdag",
+            "name": "Ugnsbakad fisk med potatis och broccoli"
+        },
+        {
+            "day": "Torsdag",
+            "name": "Kebab i ciabatta"
+        },
+        {
+            "day": "Fredag",
+            "name": "Kycklingtacos med avokado"
+        },
+        {
+            "day": "L\u00f6rdag",
+            "name": "K\u00f6ttbullar med potatismos och r\u00f6dbetssallad"
+        },
+        {
+            "day": "S\u00f6ndag",
+            "name": "Tomatsoppa med pannkakor"
+        }
+    ],
+    "sections": [
+        {
+            "name": "Frukt och gr\u00f6nt",
+            "items": [
+                {
+                    "name": "Potatis mj\u00f6lig klass 1",
+                    "qty": "2 kg"
+                },
+                {
+                    "name": "Gul l\u00f6k, Garant",
+                    "qty": "1 kg"
+                },
+                {
+                    "name": "Vitl\u00f6k",
+                    "qty": "1 kn\u00f6l"
+                },
+                {
+                    "name": "Mor\u00f6tter, Garant",
+                    "qty": "1 kg"
+                },
+                {
+                    "name": "Broccoli 250 g, Spanien",
+                    "qty": "2 st"
+                },
+                {
+                    "name": "Gurka, Spanien klass 1",
+                    "qty": "2 st"
+                },
+                {
+                    "name": "Salladsl\u00f6k i knippe",
+                    "qty": "1 knippe"
+                },
+                {
+                    "name": "Svenska \u00e4pplen",
+                    "qty": "1 kg"
+                },
+                {
+                    "name": "Avokado",
+                    "qty": "2 st"
+                },
+                {
+                    "name": "Isbergssallad klass 1",
+                    "qty": "ca 600 g"
+                }
+            ]
+        },
+        {
+            "name": "Br\u00f6d",
+            "items": [
+                {
+                    "name": "Jubileumsbr\u00f6d, \u00d6stras",
+                    "qty": "1 kg"
+                },
+                {
+                    "name": "Ciabatta, Panesco 300 g",
+                    "qty": "2 st"
+                }
+            ]
+        },
+        {
+            "name": "K\u00f6tt",
+            "items": [
+                {
+                    "name": "Fl\u00e4skf\u00e4rs 20 %, Garant",
+                    "qty": "2 x 500 g"
+                },
+                {
+                    "name": "Kebab av fl\u00e4skkarr\u00e9, Garant",
+                    "qty": "500 g"
+                },
+                {
+                    "name": "K\u00f6ttbullar, Garant",
+                    "qty": "1 kg"
+                }
+            ]
+        },
+        {
+            "name": "Mejeri",
+            "items": [
+                {
+                    "name": "Mellanmj\u00f6lk 1,5 %, Garant",
+                    "qty": "2 x 1,5 l"
+                },
+                {
+                    "name": "Svenskt sm\u00f6r (ej laktosfritt eller eko)",
+                    "qty": "500 g"
+                },
+                {
+                    "name": "Lant\u00e4gg M/L, 12-pack",
+                    "qty": "1 paket"
+                },
+                {
+                    "name": "Yoggi smaksatt yoghurt (ej laktosfri)",
+                    "qty": "1 kg"
+                }
+            ]
+        },
+        {
+            "name": "Frys",
+            "items": [
+                {
+                    "name": "Kycklingbr\u00f6stfil\u00e9, Eldorado (endast 23\u201325 nov, Willys Plus)",
+                    "qty": "2 kg"
+                },
+                {
+                    "name": "Kaptenens favoriter, Kapten",
+                    "qty": "800 g"
+                },
+                {
+                    "name": "Pannkakor, Garant 480 g",
+                    "qty": "2 paket"
+                }
+            ]
+        },
+        {
+            "name": "Skafferi",
+            "items": [
+                {
+                    "name": "Jasminris, Garant",
+                    "qty": "2 kg"
+                },
+                {
+                    "name": "Pasta korta former, Barilla 500 g",
+                    "qty": "4 paket"
+                },
+                {
+                    "name": "Krossade tomater, Garant 390 g",
+                    "qty": "5 st"
+                },
+                {
+                    "name": "Sojas\u00e5s, Twin Dragon",
+                    "qty": "1 l"
+                },
+                {
+                    "name": "Kokosmj\u00f6lk, Garant 250 ml",
+                    "qty": "3 st"
+                },
+                {
+                    "name": "Tacos\u00e5s, Santa Maria 350 g",
+                    "qty": "1 burk"
+                },
+                {
+                    "name": "Tortilla 8-pack, Banderos 320 g",
+                    "qty": "2 paket"
+                },
+                {
+                    "name": "Soppa, Kelda 5 dl (ej ekologisk)",
+                    "qty": "2 st"
+                },
+                {
+                    "name": "R\u00f6dbetssallad, Rydbergs",
+                    "qty": "200 g"
+                },
+                {
+                    "name": "Raps- och sm\u00f6rolja, Garant",
+                    "qty": "500 ml"
+                },
+                {
+                    "name": "Taco kryddmix, Garant",
+                    "qty": "30 g"
+                },
+                {
+                    "name": "Havregryn, Garant",
+                    "qty": "1,5 kg"
+                },
+                {
+                    "name": "Lingon refill, Eldorado",
+                    "qty": "700 g"
+                },
+                {
+                    "name": "Mayo, Garant",
+                    "qty": "200 ml"
+                }
+            ]
+        }
+    ]
 }
