@@ -1,10 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-  <rect width="512" height="512" fill="#ffffff"/>
-  <g fill="#15803D">
-    <!-- korg -->
-    <path d="M96 196h320c13 0 22 12 19 25l-38 164c-4 18-20 31-39 31H154c-19 0-35-13-39-31L77 221c-3-13 6-25 19-25z"/>
-    <path d="M150 180l70-92a18 18 0 0 1 29 22l-53 70zM362 180l-70-92a18 18 0 0 0-29 22l53 70z"/>
+  <rect width="512" height="512" rx="112" ry="112" fill="#ffffff"/>
+  <g fill="#15803D" stroke="#15803D" stroke-width="20" stroke-linejoin="round">
+    <path d="M158 178 L228 92 L250 92 L188 178 Z"/>
+    <path d="M354 178 L284 92 L262 92 L324 178 Z"/>
+    <path d="M82 206 H430 L386 406 H126 Z"/>
   </g>
-  <!-- bock -->
-  <path d="M186 304l50 48 92-98" fill="none" stroke="#ffffff" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M178 300 L232 352 L338 246" fill="none" stroke="#ffffff" stroke-width="40" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
