@@ -1,0 +1,78 @@
+{
+  "week": "2026-W47",
+  "meals": [
+    { "day": "Måndag", "name": "Pasta med köttfärssås (gör dubbel sats, så blir tisdagens lunch klar)" },
+    { "day": "Tisdag", "name": "Kycklingwok med grönsaker och ris" },
+    { "day": "Onsdag", "name": "Falukorv i ugn med potatismos" },
+    { "day": "Torsdag", "name": "Fiskgratäng med fryst sej och kokt potatis" },
+    { "day": "Fredag", "name": "Tacos med köttfärs och bönor" },
+    { "day": "Lördag", "name": "Bratwurst med surkål och stekt potatis" },
+    { "day": "Söndag", "name": "Krämig linssoppa med bröd (och resterna från veckan)" }
+  ],
+  "sections": [
+    {
+      "name": "Frukt och grönt",
+      "items": [
+        { "name": "Potatis", "qty": "2 kg" },
+        { "name": "Gul lök", "qty": "1 kg" },
+        { "name": "Vitlök", "qty": "1 st" },
+        { "name": "Morötter", "qty": "1 kg" },
+        { "name": "Paprika", "qty": "1 st" },
+        { "name": "Isbergssallad", "qty": "1 st" },
+        { "name": "Tomater", "qty": "2 st" },
+        { "name": "Gurka", "qty": "1 st" },
+        { "name": "Bananer" },
+        { "name": "Äpplen" }
+      ]
+    },
+    {
+      "name": "Bröd",
+      "items": [
+        { "name": "Limpa", "qty": "1 st" },
+        { "name": "Tortillabröd", "qty": "8 st" }
+      ]
+    },
+    {
+      "name": "Kött",
+      "items": [
+        { "name": "Blandfärs", "qty": "1 kg" },
+        { "name": "Falukorv", "qty": "800 g" },
+        { "name": "Bratwurst", "qty": "4 st" }
+      ]
+    },
+    {
+      "name": "Mejeri",
+      "items": [
+        { "name": "Mjölk", "qty": "3 l" },
+        { "name": "Smör", "qty": "1 paket" },
+        { "name": "Riven ost", "qty": "500 g" },
+        { "name": "Grädde", "qty": "1 dl" },
+        { "name": "Ägg", "qty": "12 st" },
+        { "name": "Yoghurt" }
+      ]
+    },
+    {
+      "name": "Frys",
+      "items": [
+        { "name": "Kycklingfilé", "qty": "600 g" },
+        { "name": "Sej", "qty": "400 g" },
+        { "name": "Wokgrönsaker", "qty": "1 påse" }
+      ]
+    },
+    {
+      "name": "Skafferi",
+      "items": [
+        { "name": "Pasta", "qty": "1 kg" },
+        { "name": "Ris", "qty": "1 kg" },
+        { "name": "Krossade tomater", "qty": "2 paket" },
+        { "name": "Svarta bönor", "qty": "1 burk" },
+        { "name": "Tacokrydda", "qty": "1 st" },
+        { "name": "Röda linser", "qty": "500 g" },
+        { "name": "Surkål", "qty": "1 burk" },
+        { "name": "Kokosmjölk", "qty": "1 burk" },
+        { "name": "Japansk soja" },
+        { "name": "Havregryn", "qty": "1 kg" }
+      ]
+    }
+  ]
+}
