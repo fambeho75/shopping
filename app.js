@@ -14,11 +14,13 @@
   var checked = {};
   var total = 0;
   var CHECK_SVG = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+  var CHEV_SVG = '<svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>';
 
   function norm(s) { return String(s == null ? "" : s).trim(); }
   function lower(s) { return norm(s).toLocaleLowerCase("sv"); }
 
-  // Stabil signatur (FNV-1a) av listans innehåll: varor + middagar.
+  // Stabil signatur (FNV-1a) av listans innehåll: varor + middagens dag och namn.
+  // Recept ingår medvetet inte, så tillagda recept inte nollställer bockarna.
   function hash(str) {
     var h = 0x811c9dc5;
     for (var i = 0; i < str.length; i++) {
@@ -54,6 +56,35 @@
     if (cls) e.className = cls;
     if (text != null) e.textContent = text;
     return e;
+  }
+
+  function textList(v) {
+    if (!Array.isArray(v)) return [];
+    return v.map(norm).filter(Boolean);
+  }
+
+  // Valfritt recept: minst ett av time, servings, ingredients eller steps
+  // måste ge visningsbart innehåll. All text normaliseras (trim) och
+  // tomma rader hoppas över. Returnerar null om receptet saknas eller är oanvändbart.
+  function parseRecipe(r) {
+    if (!r || typeof r !== "object" || Array.isArray(r)) return null;
+    var time = norm(r.time);
+    var servings = formatServings(r.servings);
+    var ingredients = textList(r.ingredients);
+    var steps = textList(r.steps);
+    if (!time && !servings && !ingredients.length && !steps.length) return null;
+    return { time: time, servings: servings, ingredients: ingredients, steps: steps };
+  }
+
+  function formatServings(v) {
+    if (v == null || v === "") return "";
+    if (typeof v === "number") {
+      return isFinite(v) ? String(v) + " portioner" : "";
+    }
+    var s = norm(v);
+    if (!s) return "";
+    if (/^\d+([.,]\d+)?$/.test(s)) return s + " portioner";
+    return s;
   }
 
   function orderSections(sections) {
@@ -92,6 +123,44 @@
     sec.querySelector("h2 small").textContent = n + "/" + lis.length;
   }
 
+  function closeRecipes(ul, except) {
+    ul.querySelectorAll(".meal-toggle[aria-expanded='true']").forEach(function (t) {
+      if (t === except) return;
+      t.setAttribute("aria-expanded", "false");
+      var id = t.getAttribute("aria-controls");
+      var body = id && document.getElementById(id);
+      if (body) body.hidden = true;
+    });
+  }
+
+  function renderRecipe(recipe) {
+    var body = el("div", "recipe");
+    if (recipe.time || recipe.servings) {
+      var meta = el("p", "recipe-meta");
+      if (recipe.time) {
+        var t = el("span", "recipe-time");
+        t.appendChild(el("span", "recipe-label", "Tid"));
+        t.appendChild(document.createTextNode(" " + recipe.time));
+        meta.appendChild(t);
+      }
+      if (recipe.servings) meta.appendChild(el("span", "recipe-servings", recipe.servings));
+      body.appendChild(meta);
+    }
+    if (recipe.ingredients.length) {
+      body.appendChild(el("h3", null, "Ingredienser"));
+      var ings = el("ul", "recipe-ings");
+      recipe.ingredients.forEach(function (line) { ings.appendChild(el("li", null, line)); });
+      body.appendChild(ings);
+    }
+    if (recipe.steps.length) {
+      body.appendChild(el("h3", null, "Gör så här"));
+      var steps = el("ol", "recipe-steps");
+      recipe.steps.forEach(function (line) { steps.appendChild(el("li", null, line)); });
+      body.appendChild(steps);
+    }
+    return body;
+  }
+
   function renderMeals(meals) {
     var wrap = el("section", "meals");
     var btn = el("button", "meals-toggle");
@@ -100,14 +169,40 @@
     btn.setAttribute("aria-expanded", "false");
     btn.setAttribute("aria-controls", "meals-list");
     btn.appendChild(el("span", null, "Veckans middagar"));
-    btn.insertAdjacentHTML("beforeend", '<svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+    btn.insertAdjacentHTML("beforeend", CHEV_SVG);
     var ul = el("ul", "meals-list");
     ul.id = "meals-list";
     ul.hidden = true;
-    meals.forEach(function (m) {
+    meals.forEach(function (m, i) {
       var li = el("li");
-      if (norm(m.day)) li.appendChild(el("span", "day", norm(m.day)));
-      li.appendChild(el("span", "meal", norm(m.name)));
+      var recipe = parseRecipe(m.recipe);
+      if (!recipe) {
+        if (norm(m.day)) li.appendChild(el("span", "day", norm(m.day)));
+        li.appendChild(el("span", "meal", norm(m.name)));
+        ul.appendChild(li);
+        return;
+      }
+      li.className = "has-recipe";
+      var toggle = el("button", "meal-toggle");
+      toggle.type = "button";
+      var recId = "recipe-" + i;
+      toggle.setAttribute("aria-expanded", "false");
+      toggle.setAttribute("aria-controls", recId);
+      if (norm(m.day)) toggle.appendChild(el("span", "day", norm(m.day)));
+      toggle.appendChild(el("span", "meal", norm(m.name)));
+      toggle.insertAdjacentHTML("beforeend", CHEV_SVG);
+      var body = renderRecipe(recipe);
+      body.id = recId;
+      body.hidden = true;
+      toggle.addEventListener("click", function (ev) {
+        ev.stopPropagation();
+        var open = toggle.getAttribute("aria-expanded") === "true";
+        closeRecipes(ul, toggle);
+        toggle.setAttribute("aria-expanded", String(!open));
+        body.hidden = open;
+      });
+      li.appendChild(toggle);
+      li.appendChild(body);
       ul.appendChild(li);
     });
     btn.addEventListener("click", function () {

@@ -17,7 +17,17 @@ Sidan hämtar alltid filen färskt (ingen cache, ingen service worker).
 {
   "week": "2026-W47",
   "meals": [
-    { "day": "Måndag", "name": "Pasta med köttfärssås" }
+    {
+      "day": "Måndag",
+      "name": "Kycklingwok",
+      "recipe": {
+        "time": "30 min",
+        "servings": 2,
+        "ingredients": ["300 g kycklingfilé", "2 dl jasminris"],
+        "steps": ["Koka riset.", "Skär kycklingen och woka."]
+      }
+    },
+    { "day": "Tisdag", "name": "Pasta med köttfärssås" }
   ],
   "sections": [
     {
@@ -32,7 +42,17 @@ Sidan hämtar alltid filen färskt (ingen cache, ingen service worker).
 ```
 
 - `week` – ISO-vecka `ÅÅÅÅ-Wvv`, t.ex. `"2026-W47"`. **Obligatorisk.** Visas som "Vecka 47".
-- `meals` – valfri lista med `{ "day", "name" }`. Visas överst som hopfällbar "Veckans middagar".
+- `meals` – valfri lista med `{ "day", "name" }` och ett valfritt `recipe`.
+  Visas överst som hopfällbar "Veckans middagar".
+  - `recipe` – valfritt objekt. Alla fält i receptet är också valfria:
+    - `time` – tid som fri text, t.ex. `"30 min"`.
+    - `servings` – antal portioner som tal (`2` visas som "2 portioner")
+      eller fri text (visas som den är).
+    - `ingredients` – lista med textrader.
+    - `steps` – lista med tillagningssteg (visas numrerade).
+  Ett recept visas bara om minst ett fält har innehåll. Middagar utan
+  recept, eller med tomt/ogiltigt recept, visas som vanligt (dag + namn)
+  och är inte klickbara. Middagar med recept fälls ut vid tryck.
 - `sections` – lista med avdelningar, var och en med `name` och `items`.
   - `items[].name` – varans namn (obligatoriskt).
   - `items[].qty` – mängd som fri text, t.ex. `"2 kg"`, `"1 burk"` (valfritt).
@@ -46,7 +66,9 @@ Okända avdelningsnamn visas efter de kända. Frysvaror hör hemma under "Frys".
 
 Avbockade varor gråas ut och flyttas längst ner i sin avdelning.
 Bockarna sparas **bara på telefonen** (localStorage), kopplade till veckan
-och listans innehåll – de nollställs automatiskt när en ny eller ändrad lista kommer.
+och listans innehåll (varor samt middagens dag och namn) – de nollställs
+automatiskt när en ny eller ändrad lista kommer. Tillagda eller ändrade
+recept räknas inte som en ny lista och nollställer alltså inte bockarna.
 Knappen **Nollställ** tar bort alla bockar för aktuell lista.
 
 ## Filer
